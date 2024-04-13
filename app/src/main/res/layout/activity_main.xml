@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:onClick="limpiarcampos"
+        android:text="Reset"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small" />
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:onClick="restaOnClick"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnSuma"
+        app:layout_constraintTop_toBottomOf="@+id/campoNumero1"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small" />
+
+    <Button
+        android:id="@+id/btnMultiplicacion"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:gravity="center"
+        android:onClick="multiplicacionOnClick"
+        android:text="*"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNumero1"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small" />
+
+    <TextView
+        android:id="@+id/lblNumero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Numero 2:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiplicacion" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:gravity="center"
+        android:onClick="sumaOnClick"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/btnMultiplicacion"
+        app:layout_constraintTop_toBottomOf="@+id/campoNumero1"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="299dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNumero2" />
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:gravity="center"
+        android:onClick="divisionOnClick"
+        android:text="/"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/btnResta"
+        app:layout_constraintTop_toBottomOf="@+id/campoNumero1"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small" />
+
+    <TextView
+        android:id="@+id/lblNumero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Numero 1:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblUniversidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Universidad Técnica del Norte"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Realizado por: Roberto Cuascota"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUniversidad" />
+
+    <TextView
+        android:id="@+id/txtCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Calculadora Básica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombres" />
+
+    <EditText
+        android:id="@+id/campoNumero1"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="120dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculadora" />
+
+    <EditText
+        android:id="@+id/campoNumero2"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="120dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnResta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
