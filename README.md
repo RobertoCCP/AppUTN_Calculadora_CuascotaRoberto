@@ -1,3 +1,6 @@
+Capturas de la Calculadora Android:
+Nombre Roberto Cuascota
+
 ![Captura de pantalla 2024-04-13 181338](https://github.com/RobertoCCP/AppUTN_Calculadora_RobertoCuascota/assets/138709561/9f772b51-f647-4060-898e-9585ec463655)
 ![Captura de pantalla 2024-04-13 181354](https://github.com/RobertoCCP/AppUTN_Calculadora_RobertoCuascota/assets/138709561/50adf768-249f-44c7-8213-fdabbbcc0395)
 ![Captura de pantalla 2024-04-13 181410](https://github.com/RobertoCCP/AppUTN_Calculadora_RobertoCuascota/assets/138709561/27d87122-dfe6-44b4-9710-504e71fdac9d)
